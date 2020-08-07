@@ -1,4 +1,4 @@
-$(function(){
+$(function(){})
 
 let countdown = sessionStorage.getItem("countdown")
 // console.log("cd: "+countdown)
@@ -19,7 +19,6 @@ let timer = setInterval(function(){
         alert( `. ${z.getDate()}: CONGRATULATIONS!!! You,ve been on the site for 24 minutes`)
     }      
 },1000);
-
 
 
 
@@ -74,8 +73,62 @@ $(".prev").on("click", function(){
 
 
 
+document.addEventListener('DOMContentLoaded',
+    function(){
+        var imageBlock = document.getElementById('facts')
+        for(var x = 1; x < 100; x ++){
+            var text = document.createElement('br')
+            var g = document.createElement('div')
+            g.className="hr"
+            var image = document.createElement('img')
+            image.src = `./rest/${x}.jpg`
+            
+            imageBlock.appendChild(text)
+            imageBlock.appendChild(g)
+            text.appendChild(image)
+
+            imageBlock.appendChild(image)
+        
+        
+        }
 
 
+        // alert(imageBlock)        
+
+    }
+);
+
+
+document.addEventListener('DOMContentLoaded',
+    function(){
+        var imageBlock = document.getElementById('factss')
+        for(var x = 1; x < 100; x ++){
+            var text = document.createElement('br')
+            var g = document.createElement('div')
+            g.className="hr"
+            var image = document.createElement('img')
+            image.src = `./rest2/${x}.jpg`
+            
+            imageBlock.appendChild(text)
+            imageBlock.appendChild(g)
+            text.appendChild(image)
+
+            imageBlock.appendChild(image)
+        
+        
+        }
+
+
+        // alert(imageBlock)        
+
+    }
+);
+
+
+
+
+
+/* 
 var oop = ["./rest/1.jpg", "./rest/2.jpg", "./rest/3.jpg", "./rest/4.jpg", "./rest/6.jpg", "./rest/7.jpg", "./rest/5.jpg", "./rest/8.jpg", ];
 // $(".canvas").attr("src",oop[num])
 
@@ -114,7 +167,7 @@ for (x=0; x<95; x++){
             // var num3 =Math.floor(Math.random() * (oop2.length));
     }
 
-}
+} */
 
 
 
@@ -142,54 +195,3 @@ $("#btnsubmit").on("click", function Validate(){
         alert(" enter the correct code")
     }
 });
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* <script>
-    
-
-    document.addEventListener('DOMContentLoaded',
-    function(){
-        var imageBlock = document.getElementById('facts')
-        for(var x = 1; x < 1; x ++){
-            var text = document.createElement('br')
-            var g = document.createElement('div')
-            g.className="hr"
-            var image = document.createElement('img')
-            image.src = `./useable 1/${x}.jpg`
-            
-            imageBlock.appendChild(text)
-            imageBlock.appendChild(g)
-            text.appendChild(image)
-
-            imageBlock.appendChild(image)
-        
-        
-        }
-
-
-        // alert(imageBlock)        
-
-    }
-)
-
-
-
-</script>
-*/})
