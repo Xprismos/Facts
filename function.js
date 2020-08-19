@@ -76,7 +76,7 @@ $(".prev").on("click", function(){
 document.addEventListener('DOMContentLoaded',
     function(){
         var imageBlock = document.getElementById('facts')
-        for(var x = 1; x < 100; x ++){
+        for(var x = 1; x < 10; x ++){
             var text = document.createElement('br')
             var g = document.createElement('div')
             g.className="hr"
