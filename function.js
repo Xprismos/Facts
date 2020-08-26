@@ -57,13 +57,13 @@ $(".prev").on("click", function(){
      
 });
 
-/* $(".next").on("click", function(){
-    if(x == 10) {
+$(".next").on("click", function(){
+    if(x == 12) {
         window.location.href = "end.html"
     }
      
 });
- */
+
 // $(document).ready(function(){
 //     $("button").click(function(){
 //         $(".try").load("./fg.txt");
@@ -191,10 +191,12 @@ $("#btnsubmit").on("click", function Validate(){
   
     var password = document.getElementById("txtpassword").value;
     if (password == mess) {
-        x ++
+        x = 0
         save()
         console.log(x);
+        x = 0
         window.location.href = "index.html";
+        x = 0
     } else {
         alert(" enter the correct code")
     }
